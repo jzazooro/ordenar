@@ -12,7 +12,22 @@ El diagrama de flujo que tenemos en nuestro codigo es el siguiente:
 Ejercicio 1. Ordenacion por insercion dicotomica
 
 ```
-
+class primerejercicioa:
+    def __init__(self, tabla):
+        self.tabla=tabla
+    def ordenarlatabla(self):
+        self.tabla.sort()
+        return self.tabla
+class primerejerciciob:
+    def __init__(self, tabla):
+        primerejercicioa.__init__(self, tabla)
+        n=[]
+        self.n=n
+    def ordenarlistavacia(self):
+        primerejercicioa.ordenar(self)
+        for i in self.tabla:
+            self.n.append(i)
+        return self.n
 ```
 
 Ejercicio 2. Una ordenacion dicotomica
